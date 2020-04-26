@@ -1,7 +1,6 @@
 form.pptx
 *.pptx
 a.out
-*.answer.cpp
 test.cpp
 *.o
 *program
