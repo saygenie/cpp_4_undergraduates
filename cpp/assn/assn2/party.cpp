@@ -7,7 +7,9 @@ using namespace std;
 
 Party :: Party(string name, bool isUser) {
     //TODO
-
+    
+    this->name = name;
+    this->isUser = isUser;
 
     return;
 }
