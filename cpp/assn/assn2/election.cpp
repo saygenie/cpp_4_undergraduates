@@ -7,9 +7,27 @@
 Election :: Election() {
     districts = new District[250];
 
-    // TODO
+    string filePath = "district_info.txt";
 
-    // return
+    ifstream openFile(filePath.data());
+    if (openFile.is_open()) {
+            string province;
+            string name;
+            string spectrum;
+            int togetherApproval;
+        
+        for (int i = 0; i < 250; i++) {
+            getline(openFile, province, '\t');
+            getline(openFile, name, ' ');
+            getline(openFile, spectrum, '\n');
+            togetherApproval = spectrum == "progressive" ? 66 : (spectrum == "moderate" ? 50 : 33);
+            
+            districts->setDistrictInfo(name, province, spectrum, togetherApproval);
+        }
+    
+        openFile.close();
+    }
+
 }
 Election :: ~Election() {
     // TODO
@@ -19,7 +37,7 @@ Election :: ~Election() {
 
 void Election :: printCurrentStatus() {
    // TODO
-
+    
    return;
 }
 void Election :: printCurrentProvinceStatus(string province) {
