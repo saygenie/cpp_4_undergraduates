@@ -14,24 +14,23 @@ void District :: setDistrictInfo(string name, string province, string spectrum, 
     this->spectrum = spectrum;
     this->togetherApproval = togetherApproval;
 }
+
 int District :: getTogetherApproval() {
-    //TODO
     return this->togetherApproval;
 }
+
 string District :: getName() {
-    //TODO
     return this->name;
 }
+
 string District :: getProvince() {
-    //TODO
     return this->province;
 }
+
 string District :: getSpectrum() {
-    //TODO
     return this->spectrum;
 }
 
 void District :: setTogetherApproval(int newApproval) {
-    // TODO
     this->togetherApproval = newApproval; 
 }
