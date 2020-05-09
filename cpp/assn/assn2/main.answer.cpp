@@ -6,7 +6,7 @@
 using namespace std;
 
 string provinces[16] = {"Seoul", "Busan", "Incheon", "Gwangju", 
-                      "Deajeon", "Ulsan", "Sejong", "Kyungki", 
+                      "Daejeon", "Ulsan", "Sejong", "Kyungki", 
                       "Kwangwon", "Chungbuk", "Chungnam", "Jeonbuk", 
                       "Jeonnam", "Kyungbuk", "Kyungnam", "Jeju"};
 
