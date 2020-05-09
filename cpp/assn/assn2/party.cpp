@@ -18,8 +18,15 @@ string Party :: getName() {
 
 
 void Party :: generatePolicy(int* P, int* M, int* C) {
-    // TODO
+    if (this->isUser) return;
 
-
-    return;
+    if (this->getName() == "Together") {
+        *P = 15;
+        *M = 40;
+        *C = 5;
+    } else {
+        *P = 5;
+        *M = 40;
+        *C = 15;
+    }
 }
