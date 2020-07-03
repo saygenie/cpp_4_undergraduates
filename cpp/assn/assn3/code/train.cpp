@@ -10,10 +10,15 @@
 
 using namespace std;
 
-double loss_function(double* delta) {
+double loss_function(double *delta)
+{
     // TODO
+    double MSE = 0;
 
-    return 0;
+    for (int i = 0; i < 10; i++)
+        MSE += (delta[i] * delta[i]) / 2;
+
+    return MSE;
 }
 
 int main() {
